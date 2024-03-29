@@ -1,4 +1,5 @@
 # embedded_programming
+# [WIP]
 
 Learning low-level embedded programming, to use for future computer-vision related project I want to do.
 Topics learned include:
