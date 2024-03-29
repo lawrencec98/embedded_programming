@@ -27,22 +27,37 @@ Project File Date:  03/29/2024
 <h2>Output:</h2>
 *** Using Compiler 'V6.21', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
 Build target 'Target 1'
-assembling startup_TM4C123.s...
-linking...
-.\Objects\proj.axf: Warning: L6439W: Multiply defined Global Symbol UsageFault_Handler defined in .text(startup_tm4c123.o) rejected in favor of Symbol defined in .text.Default_Handler(startup_tm4c.o).
-.\Objects\proj.axf: Warning: L6439W: Multiply defined Global Symbol HardFault_Handler defined in .text(startup_tm4c123.o) rejected in favor of Symbol defined in .text.HardFault_Handler(startup_tm4c.o).
-.\Objects\proj.axf: Warning: L6439W: Multiply defined Global Symbol SysTick_Handler defined in .text(startup_tm4c123.o) rejected in favor of Symbol defined in .text.Default_Handler(startup_tm4c.o).
-.\Objects\proj.axf: Warning: L6439W: Multiply defined Global Symbol NMI_Handler defined in .text(startup_tm4c123.o) rejected in favor of Symbol defined in .text.Default_Handler(startup_tm4c.o).
-.\Objects\proj.axf: Warning: L6439W: Multiply defined Global Symbol MemManage_Handler defined in .text(startup_tm4c123.o) rejected in favor of Symbol defined in .text.Default_Handler(startup_tm4c.o).
-.\Objects\proj.axf: Warning: L6439W: Multiply defined Global Symbol BusFault_Handler defined in .text(startup_tm4c123.o) rejected in favor of Symbol defined in .text.Default_Handler(startup_tm4c.o).
-.\Objects\proj.axf: Warning: L6439W: Multiply defined Global Symbol SVC_Handler defined in .text(startup_tm4c123.o) rejected in favor of Symbol defined in .text.Default_Handler(startup_tm4c.o).
-.\Objects\proj.axf: Warning: L6439W: Multiply defined Global Symbol DebugMon_Handler defined in .text(startup_tm4c123.o) rejected in favor of Symbol defined in .text.Default_Handler(startup_tm4c.o).
-.\Objects\proj.axf: Warning: L6439W: Multiply defined Global Symbol PendSV_Handler defined in .text(startup_tm4c123.o) rejected in favor of Symbol defined in .text.Default_Handler(startup_tm4c.o).
-.\Objects\proj.axf: Error: L6200E: Symbol __Vectors multiply defined (by startup_tm4c123.o and startup_tm4c.o).
-Not enough information to list image symbols.
-Not enough information to list load addresses in the image map.
-Finished: 2 information, 9 warning and 1 error messages.
-".\Objects\proj.axf" - 1 Error(s), 9 Warning(s).
+ArmClang: warning: Objects/tm4c_sct.sct: 'linker' input unused [-Wunused-command-line-argument]
+ArmClang: error: unsupported option '-mfloat-abi=' for target 'arm-arm-none-eabi'
+ArmClang: warning: argument unused during compilation: '-Wa,armasm,--diag_suppress=A1950W' [-Wunused-command-line-argument]
+ArmClang: warning: argument unused during compilation: '-gdwarf-4' [-Wunused-command-line-argument]
+ArmClang: warning: argument unused during compilation: '-D __EVAL' [-Wunused-command-line-argument]
+ArmClang: warning: argument unused during compilation: '-I ./RTE/_Target_1' [-Wunused-command-line-argument]
+ArmClang: warning: argument unused during compilation: '-I C:/Users/lawre/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include' [-Wunused-command-line-argument]
+ArmClang: warning: argument unused during compilation: '-I C:/Users/lawre/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123' [-Wunused-command-line-argument]
+ArmClang: warning: argument unused during compilation: '-D __UVISION_VERSION=539' [-Wunused-command-line-argument]
+ArmClang: warning: argument unused during compilation: '-D _RTE_' [-Wunused-command-line-argument]
+ArmClang: warning: argument unused during compilation: '-D TM4C123GH6PM' [-Wunused-command-line-argument]
+ArmClang: warning: argument unused during compilation: '-D _RTE_' [-Wunused-command-line-argument]
+assembling tm4c_sct.sct...
+startup_tm4c.c(300): warning: function 'HardFault_Handler' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
+  300 | {
+      | ^
+startup_tm4c.c(316): warning: pragma diagnostic pop could not pop, no matching push [-Wunknown-pragmas]
+  316 |   #pragma clang diagnostic pop
+      |                               ^
+startup_tm4c.c(312): warning: function declared 'noreturn' should not return [-Winvalid-noreturn]
+  312 | }
+      | ^
+startup_tm4c.c(311): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  311 |         GPIOF_AHB->DATA_Bits[LED_RED] ^= LED_RED;
+      |         ^~~~~~~~~~~~~~~~~~~~
+./tm4c_cmsis.h(1182): note: expanded from macro 'GPIOF_AHB'
+ 1182 | #define GPIOF_AHB           ((GPIO_Type *)GPIO_PORTF_AHB_BASE)
+      |                             ^
+4 warnings generated.
+compiling startup_tm4c.c...
+".\Objects\proj.axf" - 1 Error(s), 15 Warning(s).
 
 <h2>Software Packages used:</h2>
 

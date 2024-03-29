@@ -371,7 +371,7 @@
             <TextAddressRange>0x00000000</TextAddressRange>
             <DataAddressRange>0x20000000</DataAddressRange>
             <pXoBase></pXoBase>
-            <ScatterFile></ScatterFile>
+            <ScatterFile>.\Objects\proj.sct</ScatterFile>
             <IncludeLibs></IncludeLibs>
             <IncludeLibsPath></IncludeLibsPath>
             <Misc></Misc>
@@ -408,6 +408,11 @@
               <FileName>startup_tm4c.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\startup_tm4c.c</FilePath>
+            </File>
+            <File>
+              <FileName>tm4c_sct.sct</FileName>
+              <FileType>2</FileType>
+              <FilePath>.\Objects\tm4c_sct.sct</FilePath>
             </File>
           </Files>
         </Group>

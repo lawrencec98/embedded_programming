@@ -3,12 +3,11 @@
 /*---------------------------------------------------------------------------
   External References
  *---------------------------------------------------------------------------*/
-extern uint32_t __INITIAL_SP;
+extern uint32_t __initial_sp;
 extern uint32_t __STACK_LIMIT;
 #if defined (__ARM_FEATURE_CMSE) && (__ARM_FEATURE_CMSE == 3U)
 extern uint32_t __STACK_SEAL;
 #endif
-
 extern __NO_RETURN void __PROGRAM_START(void);
 
 /*---------------------------------------------------------------------------
@@ -151,16 +150,14 @@ void PWM1Fault_IRQHandler(void) __attribute__ ((weak, alias("Default_Handler")))
 /*----------------------------------------------------------------------------
   Exception / Interrupt Vector table
  *----------------------------------------------------------------------------*/
-
 #if defined ( __GNUC__ )
 #pragma GCC diagnostic push
 #pragma GCC diagnostic ignored "-Wpedantic"
 #endif
-
 /* ToDo: Add Cortex exception vectors according the used Cortex-Core */
-extern const int __VECTOR_TABLE[];
-       const int __VECTOR_TABLE[] __VECTOR_TABLE_ATTRIBUTE = {
-  (int)(&__INITIAL_SP),  			   /*     Initial Stack Pointer */
+extern const int __VECTORS[];
+       const int __VECTORS[] = {
+  (int)(&__initial_sp),  			   /*     Initial Stack Pointer */
   (int)Reset_Handler,                       /*     Reset Handler */
   (int)NMI_Handler,                         /* -14 NMI Handler */
   (int)HardFault_Handler,                   /* -13 Hard Fault Handler */
@@ -301,6 +298,7 @@ extern const int __VECTOR_TABLE[];
  *---------------------------------------------------------------------------*/
 void HardFault_Handler(void)
 {
+	while(1);
 } 
 
 /*---------------------------------------------------------------------------
@@ -313,8 +311,7 @@ void Default_Handler(void)
 	GPIOF_AHB->DATA_Bits[LED_RED] ^= LED_RED;
 }
 
-/*
+
 #if defined(__ARMCC_VERSION) && (__ARMCC_VERSION >= 6010050)
   #pragma clang diagnostic pop
 #endif
-*/

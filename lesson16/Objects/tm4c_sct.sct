@@ -1,0 +1,1 @@
+#define ARM_LIB_STACK 1024
