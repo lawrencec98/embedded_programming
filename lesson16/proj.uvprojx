@@ -400,14 +400,14 @@
               <FilePath>.\delay.c</FilePath>
             </File>
             <File>
-              <FileName>delay.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\delay.h</FilePath>
-            </File>
-            <File>
               <FileName>tm4c_cmsis.h</FileName>
               <FileType>5</FileType>
               <FilePath>..\lesson14\tm4c_cmsis.h</FilePath>
+            </File>
+            <File>
+              <FileName>startup_tm4c.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\startup_tm4c.c</FilePath>
             </File>
           </Files>
         </Group>
