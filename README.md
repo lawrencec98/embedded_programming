@@ -1,7 +1,7 @@
 # embedded_programming
 # [WIP]
 
-Learning low-level embedded programming
+Exploring low-level embedded programming
 
 ## Topics
 - Arm MCU / Tiva C Cortex-M board
