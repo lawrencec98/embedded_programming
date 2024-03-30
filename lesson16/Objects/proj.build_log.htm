@@ -40,24 +40,7 @@ ArmClang: warning: argument unused during compilation: '-D _RTE_' [-Wunused-comm
 ArmClang: warning: argument unused during compilation: '-D TM4C123GH6PM' [-Wunused-command-line-argument]
 ArmClang: warning: argument unused during compilation: '-D _RTE_' [-Wunused-command-line-argument]
 assembling tm4c_sct.sct...
-startup_tm4c.c(300): warning: function 'HardFault_Handler' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
-  300 | {
-      | ^
-startup_tm4c.c(316): warning: pragma diagnostic pop could not pop, no matching push [-Wunknown-pragmas]
-  316 |   #pragma clang diagnostic pop
-      |                               ^
-startup_tm4c.c(312): warning: function declared 'noreturn' should not return [-Winvalid-noreturn]
-  312 | }
-      | ^
-startup_tm4c.c(311): warning: unsafe buffer access [-Wunsafe-buffer-usage]
-  311 |         GPIOF_AHB->DATA_Bits[LED_RED] ^= LED_RED;
-      |         ^~~~~~~~~~~~~~~~~~~~
-./tm4c_cmsis.h(1182): note: expanded from macro 'GPIOF_AHB'
- 1182 | #define GPIOF_AHB           ((GPIO_Type *)GPIO_PORTF_AHB_BASE)
-      |                             ^
-4 warnings generated.
-compiling startup_tm4c.c...
-".\Objects\proj.axf" - 1 Error(s), 15 Warning(s).
+".\Objects\proj.axf" - 1 Error(s), 11 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -83,9 +66,9 @@ Package Vendor: Keil
    * Component: ARM::CMSIS:CORE@5.6.0
 
    * Component: Keil::Device:Startup@1.0.1
-      Source file:   Device/Source/ARM/startup_TM4C123.s
       Source file:   Device/Source/system_TM4C123.c
       Include file:  Device/Include/TM4C123/TM4C123.h
+      Source file:   Device/Source/ARM/startup_TM4C123.s
 Target not created.
 Build Time Elapsed:  00:00:01
 </pre>
