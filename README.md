@@ -2,7 +2,8 @@
 # [WIP]
 
 Learning low-level embedded programming, to use for future computer-vision related project I want to do.
-Topics learned include:
+
+## Topics
 - Arm MCU / Tiva C Cortex-M board
 - Embedded C / C++
 - Startup Code
