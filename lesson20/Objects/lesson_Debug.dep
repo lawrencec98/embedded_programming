@@ -1,0 +1,41 @@
+Dependencies for Project 'lesson', Target 'Debug': (DO NOT MODIFY !)
+CompilerVersion: 6190000::V6.19::ARMCLANG
+F (.\main.c)(0x66080CE1)(-c -mcpu=cortex-m4 -mthumb -gdwarf-2 -MD -w -O1 -mapcs-frame -mthumb-interwork -I ../ek-tm4c123gxl -I ../CMSIS/Include -IC:/Keil_v5/ARM/CMSIS/Include -I"C:/Program Files (x86)/GNU Arm Embedded Toolchain/10 2021.10/arm-none-eabi/include" -I"C:/Program Files (x86)/GNU Arm Embedded Toolchain/10 2021.10/lib/gcc/arm-none-eabi/10.3.1/include" -I"C:/Program Files (x86)/GNU Arm Embedded Toolchain/10 2021.10/arm-none-eabi/include/c++/10.3.1" -I"C:/Program Files (x86)/GNU Arm Embedded Toolchain/10 2021.10/arm-none-eabi/include/c++/10.3.1/arm-none-eabi" -D__UVISION_VERSION="539" -D__GCC -D__GCC_VERSION="1031" -DTM4C123GH6PM-o ./objects/main.o)
+I (c:\program files (x86)\gnu arm embedded toolchain\10 2021.10\lib\gcc\arm-none-eabi\10.3.1\include\stdint.h)(0x616CC9BE)
+I (c:\program files (x86)\gnu arm embedded toolchain\10 2021.10\arm-none-eabi\include\stdint.h)(0x616CC44E)
+I (c:\program files (x86)\gnu arm embedded toolchain\10 2021.10\arm-none-eabi\include\machine\_default_types.h)(0x616CC44E)
+I (c:\program files (x86)\gnu arm embedded toolchain\10 2021.10\arm-none-eabi\include\sys\features.h)(0x616CC44E)
+I (c:\program files (x86)\gnu arm embedded toolchain\10 2021.10\arm-none-eabi\include\_newlib_version.h)(0x616CC44E)
+I (c:\program files (x86)\gnu arm embedded toolchain\10 2021.10\arm-none-eabi\include\sys\_intsup.h)(0x616CC44E)
+I (c:\program files (x86)\gnu arm embedded toolchain\10 2021.10\arm-none-eabi\include\sys\_stdint.h)(0x616CC44E)
+I (..\CMSIS\Include\cmsis_version.hm.\CMSIS\Include\cmsis_compiler.h)(0x00000000)
+I (..\CMSIS\Include\cmsis_gcc.ho.\CMSIS\Include\mpu_armv7.h)(0x00000000)
+I (system_TM4C123.h\sp.h)(0x00000000)
+F (.\bsp.c)(0x6608076E)(-c -mcpu=cortex-m4 -mthumb -gdwarf-2 -MD -w -O1 -mapcs-frame -mthumb-interwork -I ../ek-tm4c123gxl -I ../CMSIS/Include -IC:/Keil_v5/ARM/CMSIS/Include -I"C:/Program Files (x86)/GNU Arm Embedded Toolchain/10 2021.10/arm-none-eabi/include" -I"C:/Program Files (x86)/GNU Arm Embedded Toolchain/10 2021.10/lib/gcc/arm-none-eabi/10.3.1/include" -I"C:/Program Files (x86)/GNU Arm Embedded Toolchain/10 2021.10/arm-none-eabi/include/c++/10.3.1" -I"C:/Program Files (x86)/GNU Arm Embedded Toolchain/10 2021.10/arm-none-eabi/include/c++/10.3.1/arm-none-eabi" -D__UVISION_VERSION="539" -D__GCC -D__GCC_VERSION="1031" -DTM4C123GH6PM-o ./objects/bsp.o)
+I (c:\program files (x86)\gnu arm embedded toolchain\10 2021.10\lib\gcc\arm-none-eabi\10.3.1\include\stdint.h)(0x616CC9BE)
+I (c:\program files (x86)\gnu arm embedded toolchain\10 2021.10\arm-none-eabi\include\stdint.h)(0x616CC44E)
+I (c:\program files (x86)\gnu arm embedded toolchain\10 2021.10\arm-none-eabi\include\machine\_default_types.h)(0x616CC44E)
+I (c:\program files (x86)\gnu arm embedded toolchain\10 2021.10\arm-none-eabi\include\sys\features.h)(0x616CC44E)
+I (c:\program files (x86)\gnu arm embedded toolchain\10 2021.10\arm-none-eabi\include\_newlib_version.h)(0x616CC44E)
+I (c:\program files (x86)\gnu arm embedded toolchain\10 2021.10\arm-none-eabi\include\sys\_intsup.h)(0x616CC44E)
+I (c:\program files (x86)\gnu arm embedded toolchain\10 2021.10\arm-none-eabi\include\sys\_stdint.h)(0x616CC44E)
+I (..\CMSIS\Include\cmsis_version.hm.\CMSIS\Include\cmsis_compiler.h)(0x00000000)
+I (..\CMSIS\Include\cmsis_gcc.ho.\CMSIS\Include\mpu_armv7.h)(0x00000000)
+I (system_TM4C123.h\sp.h)(0x00000000)
+F (.\bsp.h)(0x66074C24)()
+F (.\ek-tm4c123gxl\system_TM4C123.c)(0x66074C22)(-c -mcpu=cortex-m4 -mthumb -gdwarf-2 -MD -w -O1 -mapcs-frame -mthumb-interwork -I ../ek-tm4c123gxl -I ../CMSIS/Include -IC:/Keil_v5/ARM/CMSIS/Include -I"C:/Program Files (x86)/GNU Arm Embedded Toolchain/10 2021.10/arm-none-eabi/include" -I"C:/Program Files (x86)/GNU Arm Embedded Toolchain/10 2021.10/lib/gcc/arm-none-eabi/10.3.1/include" -I"C:/Program Files (x86)/GNU Arm Embedded Toolchain/10 2021.10/arm-none-eabi/include/c++/10.3.1" -I"C:/Program Files (x86)/GNU Arm Embedded Toolchain/10 2021.10/arm-none-eabi/include/c++/10.3.1/arm-none-eabi" -D__UVISION_VERSION="539" -D__GCC -D__GCC_VERSION="1031" -DTM4C123GH6PM-o ./objects/system_tm4c123.o)
+I (c:\program files (x86)\gnu arm embedded toolchain\10 2021.10\lib\gcc\arm-none-eabi\10.3.1\include\stdint.h)(0x616CC9BE)
+I (c:\program files (x86)\gnu arm embedded toolchain\10 2021.10\arm-none-eabi\include\stdint.h)(0x616CC44E)
+I (c:\program files (x86)\gnu arm embedded toolchain\10 2021.10\arm-none-eabi\include\machine\_default_types.h)(0x616CC44E)
+I (c:\program files (x86)\gnu arm embedded toolchain\10 2021.10\arm-none-eabi\include\sys\features.h)(0x616CC44E)
+I (c:\program files (x86)\gnu arm embedded toolchain\10 2021.10\arm-none-eabi\include\_newlib_version.h)(0x616CC44E)
+I (c:\program files (x86)\gnu arm embedded toolchain\10 2021.10\arm-none-eabi\include\sys\_intsup.h)(0x616CC44E)
+I (c:\program files (x86)\gnu arm embedded toolchain\10 2021.10\arm-none-eabi\include\sys\_stdint.h)(0x616CC44E)
+I (ek-tm4c123gxl\TM4C123.hgk-tm4c123gxl\TM4C123GH6PM.h)(0x00000000)
+I (..\CMSIS\Include\core_cm4.hm.\CMSIS\Include\cmsis_version.h)(0x00000000)
+I (..\CMSIS\Include\cmsis_compiler.hI.\CMSIS\Include\cmsis_gcc.h)(0x00000000)
+I (..\CMSIS\Include\mpu_armv7.hlk-tm4c123gxl\system_TM4C123.h)(0x00000000)
+F (.\ek-tm4c123gxl\system_TM4C123.h)(0x66074C22)()
+F (.\ek-tm4c123gxl\TM4C123.h)(0x66074C22)()
+F (.\ek-tm4c123gxl\TM4C123GH6PM.h)(0x66074C22)()
+F (.\ek-tm4c123gxl\gnu\startup_TM4C123GH6PM.c)(0x66074C22)(-c -mcpu=cortex-m4 -mthumb -gdwarf-2 -MD -w -O1 -mapcs-frame -mthumb-interwork -I ../ek-tm4c123gxl -I ../CMSIS/Include -IC:/Keil_v5/ARM/CMSIS/Include -I"C:/Program Files (x86)/GNU Arm Embedded Toolchain/10 2021.10/arm-none-eabi/include" -I"C:/Program Files (x86)/GNU Arm Embedded Toolchain/10 2021.10/lib/gcc/arm-none-eabi/10.3.1/include" -I"C:/Program Files (x86)/GNU Arm Embedded Toolchain/10 2021.10/arm-none-eabi/include/c++/10.3.1" -I"C:/Program Files (x86)/GNU Arm Embedded Toolchain/10 2021.10/arm-none-eabi/include/c++/10.3.1/arm-none-eabi" -D__UVISION_VERSION="539" -D__GCC -D__GCC_VERSION="1031" -DTM4C123GH6PM-o ./objects/startup_tm4c123gh6pm.o)
