@@ -18,7 +18,9 @@ int main(void) {
 
 /* background code: non-blocking version */
 int main(void) {
+	
     BSP_init();
+	
     while (1) {
         /* Blinky polling state machine */
         static enum {
